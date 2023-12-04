@@ -1,0 +1,161 @@
+@import "../../../sass/style.scss";
+
+header {
+	height: 70px;
+	width: 100vw;
+	background-color: rgb(255, 255, 255, .7);
+	display: flex;
+	justify-content: space-between;
+	padding: 0rem 1rem;
+	z-index: 2;
+
+	#left_section {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		h2 {
+			a {
+			text-decoration: none;
+			color: $primary;
+			}
+		}
+	}
+	#mid_section {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+			#btn_magnifier {
+				width: 2.5rem;
+				height: 2.5rem;
+				border-top-left-radius: 2.5rem;
+				border-bottom-left-radius:  2.5rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				cursor: pointer;
+				border: 1px solid #bdbdbd;
+				background-color: white;
+			}
+			#search_bar {
+				flex: 1;
+				max-width: 400px;
+				background-color: white;
+				border: none;
+				outline: none;
+				height: 2.5rem;
+				padding: 0px 4px;
+				border-top-right-radius:  2.5rem;
+				border-bottom-right-radius:  2.5rem;
+				border: 1px solid #bdbdbd;
+				border-left: 0;
+			}
+		}
+
+	nav {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		ul {
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 2rem;
+			li {
+				a {
+					color: $primary;
+					padding: .4rem;
+					border-bottom: 2px solid transparent;
+					transition: border 0.15s;
+					&:hover {
+						opacity: .8;
+						border-bottom: 2px solid $primary;
+					}
+				}
+			}
+		}
+		#close_nav {
+			display: none;
+		}
+	}
+
+	#right_section {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 800px){
+	body {
+		overflow-x: hidden;
+	}
+	header {
+		#left_section {
+			padding: 0px 10px;
+			justify-content: start;
+
+			#logo {
+				font-size: 1.3rem;
+			}
+		}
+
+		#mid_section {
+			#search_bar {
+				max-width: 150px;
+			}
+		}
+
+
+		nav {
+			position: fixed;
+			width: 60vw;
+			top: 0;
+			right: 0;
+			height: 100vh;
+			background-color: white;
+			z-index: 3;
+			transform: translate(100%);
+			transition: transform 0.3s ease;
+			
+
+			ul {
+				display: flex;
+				flex-direction: column;
+				row-gap: 8rem;
+			}
+
+			#close_nav {
+				display: block;
+			}
+		}
+
+		#right_section {
+			display: flex;
+			justify-content: end;
+			align-items: center;
+			flex: 1;
+			
+			#burger_menu_border {
+				width: 35px;
+				height: 35px;
+				cursor: pointer;
+
+				#burger_menu_icon {
+					&:hover {
+						opacity: .9;
+					}
+					&:active {
+						opacity: .7;
+					}
+				}
+			}
+		}
+	}
+}
+
+#navbar_active {
+	transform: translate(0);
+}

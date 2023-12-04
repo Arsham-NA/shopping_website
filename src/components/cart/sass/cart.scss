@@ -1,0 +1,11 @@
+@import "../../../sass/style.scss";
+
+
+#container_cart {
+	box-shadow: $shadow_sm;
+}
+
+#btn-purchase {
+	background-color: $primary;
+	color: white;
+}

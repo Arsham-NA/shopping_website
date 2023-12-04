@@ -1,0 +1,27 @@
+@import "../../../sass/style.scss";
+
+#btn_shop_now {
+	border: none;
+	box-shadow: $shadow_sm;
+	outline: auto $primary;
+	transition: all .15s;
+
+	&:hover {
+		background-color: $primary;
+		a {
+			color: white;
+		}
+	}
+	a {
+		color: black;
+		text-decoration: none;
+	}
+
+}
+
+#btn_read_more {
+	border: none;
+	outline: auto;
+	outline-color: $primary;
+	outline-offset: .2rem;
+}

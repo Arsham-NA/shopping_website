@@ -1,0 +1,23 @@
+#btn_shop_now {
+  border: none;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+  outline: auto #2C3E50;
+  transition: all 0.15s;
+}
+#btn_shop_now:hover {
+  background-color: #2C3E50;
+}
+#btn_shop_now:hover a {
+  color: white;
+}
+#btn_shop_now a {
+  color: black;
+  text-decoration: none;
+}
+
+#btn_read_more {
+  border: none;
+  outline: auto;
+  outline-color: #2C3E50;
+  outline-offset: 0.2rem;
+}/*# sourceMappingURL=home.css.map */
