@@ -1,0 +1,67 @@
+@import "../styles/colors";
+
+#card {
+	box-shadow: $shadow_sm;
+	#btn_add_card {
+		border: none;
+		box-shadow: $shadow_sm;
+		outline: auto $primary;
+		transition: all .15s;
+		background-color: transparent;
+
+		&:hover {
+			background-color: $primary;
+			color: white;
+		}
+	}
+
+	transition: all 0.15s ;
+	&:hover {
+		scale: 1.009;
+	}
+}
+
+img {
+	cursor: pointer;
+}
+.filter_border {
+	background-color: white;
+	.filter_container {
+		li {
+			cursor: pointer;
+			padding: 0rem .4rem;
+			font-size: 18px;
+			border-bottom: 1px solid transparent;
+			color: $primary;
+			&:hover {
+				border-bottom: 1px solid $primary;
+			}
+			&:focus {
+				border-bottom: 1px solid $primary;
+			}
+		}
+	
+		li.active {
+			border-bottom: 1px solid $primary;
+		}
+	}
+}
+
+.products_page.dark_mode {
+	.filter_border {
+		background-color: $dark_2;
+
+		h2, li {
+			color: white;
+		}
+	}
+	.card {
+		background-color: $dark_2;
+
+		p, h6, button {
+			color: white;
+		}
+		
+	}
+	
+}

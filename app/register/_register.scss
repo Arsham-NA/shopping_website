@@ -1,0 +1,28 @@
+@import "../styles/colors";
+
+.form_register {
+	width: 70vw;
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 14px;
+	box-shadow:  0px 0px 16px rgba(0, 0, 0, 0.10);
+	overflow: auto;
+	transition: background-color .15s ease;
+
+	.btn_signin {
+		background-color: $primary;
+		color: white;
+	}
+}
+
+.form_register.dark_mode {
+	background-color: $dark_2;
+	h1 {
+		color: white;
+	}
+	label {
+		color: white;
+	}
+}
+

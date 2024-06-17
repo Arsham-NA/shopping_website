@@ -1,0 +1,29 @@
+@import "../../styles/colors";
+
+.back_to_top_border {
+	position: fixed;
+	width: 2.5rem;
+	height: 2.5rem;
+	background-color: $primary;
+	right: 1rem;
+	bottom: 1rem;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: transform .4s ease;
+	transform: translateY(150%);
+	z-index: 1;
+
+	.back_to_top_icon {
+		color: white;
+		width: 40%;
+		height: 40%;
+	}
+}
+
+.back_to_top_border.active {
+	display: flex;
+	transform: translateY(0);
+}

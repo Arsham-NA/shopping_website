@@ -1,0 +1,52 @@
+@import "../styles/colors";
+
+.cart_container {
+	box-shadow: $shadow_sm;
+	background-color: white;
+
+	.btn_minus {
+		min-width: 2rem;
+		min-height: 2rem;
+		border: 2px solid $primary;
+		outline-color: $primary;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: white;
+
+		svg {
+			color: $primary;
+		}
+	}
+
+	.btn_plus {
+		min-width: 2rem;
+		min-height: 2rem;
+		border: 2px solid $primary;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $primary;
+
+		svg {
+			color: white;
+		}
+	}
+}
+
+#btn-purchase {
+	background-color: $primary;
+	color: white;
+}
+
+.cart_page.dark_mode {
+	.cart_container {
+		background-color: $dark_2;
+
+		h5, h6 {
+			color: white;
+		}
+	}
+}

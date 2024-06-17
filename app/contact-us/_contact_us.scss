@@ -1,0 +1,32 @@
+@import "../styles/colors";
+
+.contact_us_container {
+	background-color: $light;
+	box-shadow: $shadow-sm;
+	width: 80vw;
+	max-width: 1000px;
+
+	.contact_us_form {
+		.btn_submit {
+			background-color: $primary;
+			color: white;
+		}
+	}
+
+	.contact_info {
+		background-color: $primary;
+		color: white;
+
+		.icons_border {
+			width: 32px;
+			height: 32px;
+			background-color: $dark_2;
+			border-radius: 16px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+
+	}
+}

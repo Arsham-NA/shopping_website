@@ -1,0 +1,90 @@
+@import "../../styles/colors";
+
+.footer {
+	background-color: white;
+	padding: 1rem;
+	font-size: 14px;
+	section {
+		padding: 1rem;
+		ul {
+			
+			li, h6 {
+				a {
+					padding: .4rem;
+					cursor: pointer;
+					color: #616161;
+					border-bottom: 1px solid transparent;
+
+					&:hover {
+						border-bottom: 1px solid $primary;
+					}
+				}	
+			}
+			h6 {
+				font-weight: bold;
+				a {
+					color: black;
+				}
+			}
+
+			li {
+				margin-top: 16px;
+
+				.contact_us{
+					color: white;
+					background-color: $primary;
+					border-radius: 2rem;
+					padding: .6rem .8rem;
+				}
+			}
+		}
+	}
+
+	
+
+	.section_4 {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: start;
+		input {
+			border-radius: .4rem;
+			padding: .6rem .8rem;
+		}
+		.container_btn {
+			display: flex;
+			justify-content: start;
+			align-items: center;
+			.btn_subscribe {
+				@include btn_outline;
+				border-radius: .4rem;
+				padding: .6rem .8rem;
+				
+			}
+		}
+
+		.social_media {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			column-gap: .5rem;
+
+			a {
+				border-radius: 50%;
+				min-width: 36px;
+				min-height: 36px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: $primary;
+				svg {
+					width: 65%;
+					height: 65%;
+					color: white;
+				}
+			}
+		}
+	}
+}
+
+

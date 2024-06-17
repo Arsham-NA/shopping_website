@@ -1,0 +1,19 @@
+@import "../../styles/colors";
+
+.designers_container {
+	background-color: white;
+	box-shadow: $shadow-sm;
+	padding: 1rem 1rem 3rem 1rem;
+
+		.designer {
+			background-color: #FFF2EB;
+			text-align: center;
+			padding: 1rem;
+			overflow: hidden;
+			box-shadow: inset 0px 0px 20px rgba(0, 0, 0, .05) ;
+		}
+
+		.swiper-pagination-bullet {
+			background-color: $primary;
+		}
+}

@@ -1,0 +1,19 @@
+$primary: #2C3E50;
+$light: #f2f2f6;
+$dark_1: #1c1c1e;
+$dark_2: #313135;
+$dark_3: #848384;
+
+$shadow_sm: 0px 0px 16px rgba(0, 0, 0, 0.10);
+
+@mixin btn_outline {
+	border: none;
+	outline: 1px auto $primary;
+	transition: all .15s;
+	background-color: transparent;
+
+	&:hover {
+		background-color: $primary;
+		color: white;
+	}
+}
