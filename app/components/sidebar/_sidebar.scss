@@ -1,0 +1,47 @@
+@import "../../styles/colors";
+
+.sidebar_btn {
+	border: none;
+	background-color: transparent;
+	width: 2rem;
+	height: 2rem;
+}
+
+.sidebar{
+
+	.close_btn {
+		width: 2.3rem;
+		height: 2.3rem;
+		border: none;
+		background-color: transparent;
+		position: absolute;
+		top: 1rem;
+		left: 1rem;
+		cursor: pointer;
+		z-index: 1;
+	}
+
+	nav {
+		ul {
+			margin: 0;
+			padding: 0;
+			li {
+				a {
+					color: $primary;
+					padding: .4rem;
+					border-bottom: 2px solid transparent;
+					transition: border 0.15s, background-color .15s;
+					cursor: pointer;
+					font-size: 1.2rem;
+					&:hover {
+						opacity: .8;
+						border-bottom-color: $primary;
+					}
+				}
+				a.active {
+					border-bottom-color: $primary;
+				}
+			}
+		}
+	}
+}

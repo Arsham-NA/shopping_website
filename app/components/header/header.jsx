@@ -8,11 +8,11 @@ import Link from "next/link";
 import axios from "axios";
 import { useSelector, useDispatch } from 'react-redux'
 import { change_theme } from "@/app/redux/dark_mode";
+import Sidebar from "../sidebar/sidebar";
 
 
 const Header = () => {
 
-	const [navbar_active, settnavbar_active] = useState(false);
 	const [search_window, setsearch_window] = useState(false);
 	const [serach_window_input, setsearch_window_input] = useState();
 	const [products, setproducts] = useState([]);
@@ -25,7 +25,7 @@ const Header = () => {
 		let token = localStorage.getItem("user_token");
 		token = JSON.parse(token);
 		setUser_token(token);
-	}, [])
+	}, []);
 
 	useEffect(() => {
 		//chon emkan dare data ziad bashe data ro yeja nemigirim o ba har search rerender mikonim
@@ -42,7 +42,7 @@ const Header = () => {
 	return (
 		<header className={dark_mode ? "dark_mode" : undefined}>
 			<div className="left_section">
-				<h4 id="logo"><Link href={"/"}>Arsham <br className="d-sm-none"></br>Store</Link></h4>
+				<span id="logo"><Link href={"/"}>Shopping <br className="d-sm-none"></br>Website</Link></span>
 				<button className="btn_toggle" onClick={() => dispatch(change_theme())}>
 					<div className="toggler">
 						{dark_mode ? <BsBrightnessHighFill  style={{width: "12px", height: "12px"}}/> : <BsMoonFill style={{width: "12px", height: "12px"}}/>}
@@ -58,7 +58,7 @@ const Header = () => {
 				</div>
 			</div>
 			
-			<nav className={navbar_active ? "nav navbar_active" : "nav"}>
+			<nav className="nav d-none d-md-flex">
 				{
 					!user_token ? (
 						<ul>
@@ -78,13 +78,10 @@ const Header = () => {
 						</ul>
 					)
 				}
-				<button id="close_nav" className=" btn-close position-absolute top-0 start-0 m-3" onClick={() => settnavbar_active(false)}></button>
 			</nav>
 			
-			<div className="right_section">
-				<div id="burger_menu_border" onClick={() => {settnavbar_active(true)}}>
-					<FaBars className="w-100 h-100" id="burger_menu_icon" />
-				</div>
+			<div className="right_section d-block d-md-none d-flex justify-content-end align-items-center" style={{flex: "1"}}>
+				<Sidebar />
 			</div>
 			{/* search window */}
 			<section className={`search_window ${search_window ? "search_window_active" : undefined}`}>
