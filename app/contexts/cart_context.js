@@ -12,6 +12,7 @@ const get_cart_ls = () => {
 		return [];
 	}
 }
+
 export const Cart_Context_Provider = ({children}) => {
 
 	const [items, setItems] = useState(get_cart_ls());

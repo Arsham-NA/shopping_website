@@ -7,17 +7,28 @@
   list-style-type: none;
   text-decoration: none !important;
   
-  input {
-    &:focus {
-      box-shadow: 0 0 0 0.15rem rgba(44, 62, 80, 0.6) !important;
-      border-color: $primary !important;
-    }
-  }
 }
  body {
-  background-color: $light !important;
+   background-color: $light !important;
+
+   input {
+     &:focus {
+       box-shadow: 0 0 0 0.15rem rgba(44, 62, 80, 0.6) !important;
+       border-color: $primary !important;
+     }
+   }
+
+   .slider_container {
+    .swiper-pagination-bullet {
+      width: 8px;
+      height: 8px;
+      border-radius: 4px;
+      background-color: $primary;
+    }
+    .swiper-pagination-bullet-active {
+      width: 1.2em;
+      transition: width ease .25s;
+    }
+  }
  }
 
- body.dark_mode {
-  background-color: $dark_1 !important;
- }

@@ -10,8 +10,8 @@ import { Redux_Provider } from "./redux/redux_provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Arsham",
-  description: "Shopping Website",
+  title: "Shopping Website",
+  description: "Lorem ipsum dolor sit amet.",
 };
 
 export default function RootLayout({ children }) {

@@ -32,7 +32,7 @@ const Designers_Slider = () => {
 	return (
 		
 			<Swiper
-				className="designers_container container-fluid rounded-2 mt-4"
+				className="slider_container designers_container container-fluid rounded-2 mt-4"
 				modules={[Navigation, Pagination]}
 				spaceBetween={16}
 				slidesPerView={number_slider}

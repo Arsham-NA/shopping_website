@@ -1,33 +1,8 @@
 @import "./styles/colors";
 
-#btn_shop_now {
-	@include btn_outline;
-	box-shadow: $shadow_sm;
-}
-
 #btn_read_more {
 	border: none;
 	outline: auto;
 	outline-color: $primary;
 	outline-offset: .2rem;
 }
-
-.home_page.dark_mode {
-	.hero_section {
-		p {
-			color: white;
-		}
-	
-		h2 {
-			color: white;
-		}
-	
-		#btn_shop_now {
-			color: white;
-		}
-	}
-	#top_categories_label {
-		color: white;
-	}
-}
-

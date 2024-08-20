@@ -1,0 +1,8 @@
+@import "../../../styles//colors";
+
+.hero_section {
+	#btn_shop_now {
+		@include btn_outline;
+		box-shadow: $shadow_sm;
+	}
+}
