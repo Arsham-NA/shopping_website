@@ -8,7 +8,7 @@ const TopCategories = () => {
 
 	return (
 		<section className="container-fluid mt-5" id="top_categories_label">
-			<h2 className="mb-3">Top Categories</h2>
+			<h2 className="mb-3 fs-1">Top Categories</h2>
 			<div className="row row-cols-1 row-cols-md-2 row-gap-3"> 
 				<div className="col position-relative">
 					<Image src="/images/home/top_categories/image-1.webp" alt="image_1" width={1675} height={1116} className="w-100 h-100 rounded-2" style={{cursor: "pointer"}} onClick={() => router.push("/products")} />

@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./_designers_slider.scss";
@@ -23,27 +24,31 @@ const Designers_Slider = () => {
 		};
 
 		fetch_data();
-		
-		// slider number responsive
-		window.innerWidth < 768 ? setNumber_slider(1) : setNumber_slider(3);
 ;
 	}, []);
 
 	return (
 		
 			<Swiper
-				className="slider_container designers_container container-fluid rounded-2 mt-4"
+				className="slider_container designers_container w-100 rounded-2 mt-4 w-100"
 				modules={[Navigation, Pagination]}
-				spaceBetween={16}
-				slidesPerView={number_slider}
+				spaceBetween={10}
 				pagination={{ clickable: true }}
 				scrollbar={{ draggable: true }}
+				breakpoints={{
+					768: {
+						slidesPerView: 2
+					},
+					992: {
+						slidesPerView: 3
+					}
+				}}
 			>
 
 			{
 				designers.map((designer) => {
 					return (
-						<SwiperSlide key={designer.id}>
+						<SwiperSlide key={designer.id} className="mb-3 p-4">
 							<div className="designer rounded-1">
 								<Image src={designer.avatar} alt="designer_avatar" width={100} height={100} className="rounded-circle"/>
 								<h5 className="mt-3">{designer.first_name} {designer.last_name}</h5>

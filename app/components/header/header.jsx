@@ -2,7 +2,6 @@
 import "./_header.scss";
 import { useState, useEffect} from "react";
 import { BsSearch, BsCart2, BsMoonFill, BsBrightnessHighFill  } from "react-icons/bs";
-import { FaBars } from "react-icons/fa6";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import axios from "axios";

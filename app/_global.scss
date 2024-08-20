@@ -1,4 +1,4 @@
-@import "./styles/colors";
+@import "./styles/variables";
 
 * {
   box-sizing: border-box;
@@ -8,27 +8,41 @@
   text-decoration: none !important;
   
 }
- body {
-   background-color: $light !important;
 
-   input {
-     &:focus {
-       box-shadow: 0 0 0 0.15rem rgba(44, 62, 80, 0.6) !important;
-       border-color: $primary !important;
-     }
-   }
-
-   .slider_container {
-    .swiper-pagination-bullet {
-      width: 8px;
-      height: 8px;
-      border-radius: 4px;
-      background-color: $primary;
+body {
+  background-color: $light !important;
+  input {
+    &:focus {
+      box-shadow: 0 0 0 0.15rem rgba(44, 62, 80, 0.6) !important;
+      border-color: $primary !important;
     }
-    .swiper-pagination-bullet-active {
-      width: 1.2em;
-      transition: width ease .25s;
+  }
+  .slider_container {
+   .swiper-pagination-bullet {
+     width: 8px;
+     height: 8px;
+     border-radius: 4px;
+     background-color: $primary;
+   }
+   .swiper-pagination-bullet-active {
+     width: 1.2em;
+     transition: width ease .25s;
+   }
+ }
+
+ .not_found_page {
+  width: 100%;
+  height: 80vh;
+  section {
+    max-width: 500px;
+    a {
+      color: $primary;
+      font-weight: bold;
+    }
+    #home_page_btn {
+      @include btn_outline;
     }
   }
  }
+}
 

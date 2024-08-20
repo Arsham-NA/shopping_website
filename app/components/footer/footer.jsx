@@ -14,7 +14,7 @@ const Footer = () => {
 			<div className="row row-cols-2 row-cols-md-4">
 				<section>
 					<ul className="w-100 h-100 p-0 m-0">
-						<h6><Link href={"/"}>Customer Service</Link></h6>
+						<h2 className="fs-6"><Link href={"/"}>Customer Service</Link></h2>
 						<li><Link href={"/"}>Contact Us</Link></li>
 						<li><Link href={"/"}>Order Status</Link></li>
 						<li><Link href={"/"}>Shopping</Link></li>
@@ -26,7 +26,7 @@ const Footer = () => {
 				</section>
 				<section >
 					<ul className="w-100 h-100 p-0 m-0">
-						<h6><Link href={"/"}>About Us</Link></h6>
+						<h2 className="fs-6"><Link href={"/about-us"}>About Us</Link></h2>
 						<li><Link href={"/"}>All Brands</Link></li>
 						<li><Link href={"/"}>Careers</Link></li>
 						<li><Link href={"/"}>Corporate Social Responsibility</Link></li>
@@ -39,7 +39,7 @@ const Footer = () => {
 				</section>
 				<section>
 					<ul className="w-100 h-100 p-0 m-0">
-						<h6><Link href={"/"}>Store & Services</Link></h6>
+						<h2 className="fs-6"><Link href={"/"}>Store & Services</Link></h2>
 						<li><Link href={"/"}>Find a Store</Link></li>
 						<li><Link href={"/"}>Alteration & Tailoring</Link></li>
 						<li><Link href={"/"}>Pop-In Shop</Link></li>

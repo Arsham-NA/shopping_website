@@ -1,6 +1,6 @@
-@import "../styles/colors";
+@import "../../styles/variables";
 
-.form_register {
+.form_login {
 	width: 70vw;
 	max-width: 500px;
 	margin-left: auto;
@@ -10,13 +10,13 @@
 	overflow: auto;
 	transition: background-color .15s ease;
 
-	.btn_signin {
+	.btn_login {
 		background-color: $primary;
 		color: white;
 	}
 }
 
-.form_register.dark_mode {
+.form_login.dark_mode {
 	background-color: $dark_2;
 	h1 {
 		color: white;
@@ -24,5 +24,14 @@
 	label {
 		color: white;
 	}
+
+	#login_help {
+		color: $dark_3;
+	}
 }
 
+.btn_github {
+	width: 300px;
+	padding: 1rem;
+	max-width: 90vw;
+}
