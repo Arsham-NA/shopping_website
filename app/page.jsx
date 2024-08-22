@@ -4,9 +4,11 @@ import Designers_Slider from "./components/designers_slider/designers_slider";
 import HeroSection from "./components/home/hero_section/hero_section";
 import TopCategories from "./components/home/top_category/top_categories";
 
+export const metadata = {
+	title: "Online Shopping",
+}
 
 const Home = () => {
-
   return (
     <main className={`px-4 home_page`}>
       {/* hero section */}
@@ -15,7 +17,11 @@ const Home = () => {
 			{/* top categories */}
 			<TopCategories />
 
+			{/* best sellers */}
+			<section className="w-100">
+			<h2 className="w-100 text-center mt-5 mb-3">Best Sellers</h2>
 			<ImageSlider />
+			</section>
 
 			{/* top brands */}
 			<section className="container-fluid p-0 mt-5">

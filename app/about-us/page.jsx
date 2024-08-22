@@ -1,5 +1,10 @@
 import Image from "next/image";
 
+export const metadata = {
+	title: "About Us",
+	description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat harum voluptatibus, natus deleniti nostrum in."
+}
+
 const About = () => {
 	return (
 		<main className="about_us_page container-fluid mt-2">

@@ -31,7 +31,7 @@ const ImageSlider = () => {
 
 	return (
 		<Swiper 
-			className="slider_container container-md mt-5 rounded-2 overflow-hidden p-0 border border-2 shadow-sm"
+			className="slider_container container-md rounded-2 overflow-hidden p-0 border border-2 shadow-sm"
 			modules={[Navigation, Pagination]}
       spaceBetween={20}
       slidesPerView={1}

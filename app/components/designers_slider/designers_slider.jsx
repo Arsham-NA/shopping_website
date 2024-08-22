@@ -11,10 +11,6 @@ import Image from "next/image";
 const Designers_Slider = () => {
 
 	const [designers, setDesigners] = useState([]);
-	const [number_slider, setNumber_slider] = useState(3);
-
-
-	
 
 	useEffect(() => {
 		const fetch_data = async () => {
@@ -30,9 +26,9 @@ const Designers_Slider = () => {
 	return (
 		
 			<Swiper
-				className="slider_container designers_container w-100 rounded-2 mt-4 w-100"
+				className="slider_container designers_container w-100 rounded-2 mt-4 w-100 pb-3"
 				modules={[Navigation, Pagination]}
-				spaceBetween={10}
+				spaceBetween={0}
 				pagination={{ clickable: true }}
 				scrollbar={{ draggable: true }}
 				breakpoints={{
@@ -48,7 +44,7 @@ const Designers_Slider = () => {
 			{
 				designers.map((designer) => {
 					return (
-						<SwiperSlide key={designer.id} className="mb-3 p-4">
+						<SwiperSlide key={designer.id} className=" p-4">
 							<div className="designer rounded-1">
 								<Image src={designer.avatar} alt="designer_avatar" width={100} height={100} className="rounded-circle"/>
 								<h5 className="mt-3">{designer.first_name} {designer.last_name}</h5>

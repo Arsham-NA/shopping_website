@@ -1,6 +1,6 @@
-@import "../../styles/variables";
+@import "../../../styles/variables";
 
-.form_login {
+.login_form {
 	width: 70vw;
 	max-width: 500px;
 	margin-left: auto;
@@ -10,13 +10,13 @@
 	overflow: auto;
 	transition: background-color .15s ease;
 
-	.btn_login {
+	.submit_btn {
 		background-color: $primary;
 		color: white;
 	}
 }
 
-.form_login.dark_mode {
+.login_form.dark_mode {
 	background-color: $dark_2;
 	h1 {
 		color: white;

@@ -63,7 +63,7 @@ const Header = () => {
 						<ul>
 							<li><Link href={"/cart"} className={pathname === "/cart" ? "active" : undefined}><BsCart2 style={{width: "24px", height: "24px"}}/></Link></li>
 							<li><Link href={"/products"} className={pathname === "/products" ? "active" : undefined}>Products</Link></li>
-							<li><Link href={"/about"} className={pathname === "/about" ? "active" : undefined}>About</Link></li>
+							<li><Link href={"/about-us"} className={pathname === "/about-us" ? "active" : undefined}>About</Link></li>
 							<li><Link href={"/register"} className={pathname === "/register" ? "active" : undefined}>Register</Link></li>
 							<li><Link href={"/login"} className={pathname === "/login" ? "active" : undefined}>Login</Link></li>
 						</ul>
@@ -71,7 +71,7 @@ const Header = () => {
 						<ul>
 							<li><Link href={"/cart"} className={pathname === "/cart" ? "active" : undefined}><BsCart2 style={{width: "24px", height: "24px"}}/></Link></li>
 							<li><Link href={"/products"} className={pathname === "/products" ? "active" : undefined}>Products</Link></li>
-							<li><Link href={"/about"} className={pathname === "/about" ? "active" : undefined}>About</Link></li>
+							<li><Link href={"/about-us"} className={pathname === "/about-us" ? "active" : undefined}>About</Link></li>
 							<li><Link href={"/dashboard"} className={pathname === "/dashboard" ? "active" : undefined}>Dashboard</Link></li>
 							<li><a onClick={() => {localStorage.clear(); window.location = "/"}}>Logout</a></li>
 						</ul>
