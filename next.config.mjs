@@ -10,6 +10,10 @@ const nextConfig = {
 					protocol: 'https',
 					hostname: 'reqres.in'
 				},
+				{
+					protocol: 'https',
+					hostname: 'fakestoreapi.com'
+				},
 			],
 		},
 };
