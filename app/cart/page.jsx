@@ -18,7 +18,7 @@ const Cart = () => {
 				items.length === 0 ? <h1 className="vw-100 vh-100 d-flex justify-content-center align-items-center">Your Cart Is Empty</h1>
 				: 
 				//cart vahghti khali nist
-				<div className={`cart_page vw-100 vh-100 ${dark_mode ? "dark_mode" : undefined}`}>
+				<div className={`cart_page w-100 vh-100 ${dark_mode ? "dark_mode" : undefined}`}>
 					<div className="cart_container col-11 col-md-10 mx-auto p-0 mt-3 d-flex flex-column justify-content-center align-items-center row-gap-2 rounded-3">
 						{	
 							items.map((product) => {
